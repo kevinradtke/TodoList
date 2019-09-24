@@ -6,7 +6,8 @@ function addTodo() {
     cb.setAttribute("class", "cb")
     let newTodo = document.createElement('li')
     newTodo.setAttribute("style", "list-style-type:none")
-    newTodo.textContent = " " + data.value
+    newTodo.textContent = data.value
+    console.log(data)
     newTodo.insertBefore(cb, newTodo.firstChild)
     list.appendChild(newTodo)
 }
